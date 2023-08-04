@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투두리스트 | TO DO LIST</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js"></script>
+</head>
+<body id="todobody">
+
+    <header id="header">
+        <nav class="menubar">
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <div class="list shadow">
+            <div class="todowrite">
+                <h1>TO DO LIST</h1>
+                <div class="inputfield">
+                    <input id="input" type="text" placeholder="할 일을 입력해주세요.">
+                    <input id="addbtn" type="button" value="➕" onclick="addTodo()">
+                </div>
+            </div>
+            
+            <div class="todolistbox"><div id="todolist"></div></div>
+            
+        </div>
+    </div>
+</body>
+</html>

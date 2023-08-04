@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | TO DO LIST</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/main.js"></script>
+</head>
+<body id="joinbody">
+    <header id="joinheader">
+        <nav class="menubar mainbox">
+            <a href="todo.html"><h2>TODO</h2></a>
+        </nav>
+    </header>
+
+    <div class="joinmain">
+        <div class="join">
+            <h1>TO DO LIST</h1>
+            <div class="item">
+                <div class="lable" id="idtext">아이디
+                    <div class="errormsg" id="iderrormsg"></div>
+                </div>
+                <input id="joinid" type="text" onkeyup="Alphanum(this)" placeholder="아이디를 입력해주세요.">
+                <input id="idcheckbtn" type="button" value="중복확인" onclick="idCheck()">
+            </div>
+            <div class="item">
+                <div class="lable" id="pwtext">비밀번호
+                    <div class="errormsg" id="pwerrormsg"></div>
+                </div>
+                <input id="joinpw" type="password" onkeyup="Alphanum(this)" placeholder="비밀번호를 입력해주세요.">
+            </div>
+            <div class="item">
+                <div class="lable" id="checkpwtext">비밀번호 확인
+                    <div class="errormsg" id="checkpwerrormsg"></div>
+                </div>
+                <input id="checkpw" type="password" onkeyup="Alphanum(this)" placeholder="비밀번호를 다시 입력해주세요.">
+            </div>
+            <div class="item">
+                <input id="joinbtn" type="button" value="가입 완료" onclick="finjoin()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
